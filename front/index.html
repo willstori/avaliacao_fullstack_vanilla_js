@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>MADLAB</title>
+</head>
+
+<body>
+
+    <section class="home">
+        <!-- Logo da Home -->
+        <h1 class="logo"><img src="assets/img/logo.png" alt="MADLAB"></h1>
+
+        <!-- Carrosel para Desktop-->
+        <div class="container-desktop">
+            <!-- Seta da Esquerda -->
+            <div class="setas anterior">
+                <img src="assets/img/esquerda.png">
+            </div>
+            <div class="conteudo">
+                <!-- Inicio do Carrosel-->
+                <div id="carrosel-desktop" class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Conteúdo do carrosel desktop -->
+                    </div>
+                </div>
+                <!-- Fim Carrosel -->
+            </div>
+            <!-- Seta da Direita -->
+            <div class="setas proximo">
+                <img src="assets/img/direita.png">
+            </div>
+        </div>
+
+        <!-- Carrosel para Celular -->
+        <div class="container-celular">
+            <div class="conteudo">
+                <!-- Início do Carrosel -->
+                <div id="carrosel-celular" class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Conteúdo do carrosel celular -->
+                    </div>
+                </div>
+                <!-- Fim do Carrosel -->
+            </div>
+            <!-- Seta da Esquerda -->
+            <div class="seta-esquerda anterior">
+                <img src="assets/img/esquerda.png">
+            </div>
+            <!-- Seta da Direita -->
+            <div class="seta-direita proximo">
+                <img src="assets/img/direita.png">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="artigos">
+        <!-- Conteúdo artigos -->
+    </section>
+
+    <section class="contato">
+        <h1 class="logo-contato"><img src="assets/img/logo.png" alt="MADLAB"></h1>
+        <div class="container">
+            <div class="textos">
+                <h3>WE ARE HIRING</h3>
+                <p>
+                    UX/UI Designer<br>
+                    Frontend<br>
+                    Backend<br>
+                    IOS Developer<br>
+                    Pole Dancer
+                </p>
+            </div>
+            <div class="botao">
+                <button id="abrir-modal" type="button">Entre em contato</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="caixa">
+            <button type="button" class="fechar"><img src="assets/img/close.png" alt="fechar" /></button>
+            <p id="mensagem">Entraremos em contato o mais rápido possível</p>
+            <form id="contato" class="formulario-contato" action="javascript:;">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <button type="submit">Entre em contato</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
